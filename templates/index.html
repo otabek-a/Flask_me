@@ -5,24 +5,44 @@
   <title> Catalog </title>
   <style>
     body{
-        background-color: grey;  
+        background-color: rgb(24, 20, 20);  
     }
         .box {
       border: 3px solid rgb(240, 229, 229); /* Ramka */
       padding: 20px; /* Ichki masofa */
       width: 300px; /* Eni */
-      background-color: rgb(23, 4, 4); /* Orqa fon */
+      background-color:black; /* Orqa fon */
+      color: gold; /* Matn rangi */
+      border-radius: 15px;
+      box-sizing: border-box; /* Ramka eni bilan teng bo'lishi uchun */
+    }
+    .otabek{border: 3px solid rgb(240, 229, 229); /* Ramka */
+      padding: 20px; /* Ichki masofa */
+      width: 300px; /* Eni */
+      background-color: black; /* Orqa fon */
       color: white; /* Matn rangi */
       border-radius: 15px;
       box-sizing: border-box; /* Ramka eni bilan teng bo'lishi uchun */
+
     }
 
     img {
       width: 300px; /* Rasmingiz ham ramka bilan bir xil */
       height: 300px; /* Balandligi */
-      border: 3px solid rgb(17, 13, 13); /* Ramka */
+      border: 3px white; /* Ramka */
       box-sizing: border-box; /* Ramka eni bilan bir xil */
       border-radius: 15px;
+    } button {
+      padding: 15px 40px;
+      font-size: 20px;
+      background-color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: black;
+      color: white;
     }
  
    </style>
@@ -32,14 +52,25 @@
     <h1 class="box">WELCOME dear <br> by this blog i can <br> introduce myself</h1>
      
     <img src="static/telegram-cloud-photo-size-4-5930545595016132525-y.jpg"  alt="Bu men, Otabek!" />
-    <h1 class="box"> about me </h1>
-    <p>Hello! My name is Otabek. I am from Uzbekistan, <br> specifically from the beautiful and historical <br> city of Samarkand. I am currently a student <br> and preparing for the IELTS exam to  <br>study abroad. I am passionate about learning <br> new languages, coding, and exploring <br>historical places. In my free time, I enjoy <br>spending time with my friends and trying <br>different traditional dishes.</p>
+    <h1 class="box"> about me:</h1>
+    <p class="otabek">Hello! My name is Otabek. I am from Uzbekistan, <br> specifically from the beautiful and historical <br> city of Samarkand. I am currently a student <br> and preparing for the IELTS exam to  <br>study abroad. I am passionate about learning <br> new languages, coding, and exploring <br>historical places. In my free time, I enjoy <br>spending time with my friends and trying <br>different traditional dishes.</p>
     <h1 class="box"> my skilss: </h1>
     <img src=" static/Screenshot 2025-03-16 at 12.59.38.png"  alt="Bu men, Otabek!" />
     <h1 class="box"> ROAD MAP: </h1>
-    <p>I'm currently on an exciting journey <br> in the world of IT. I've already gained <br> solid experience in Python, C#, SQL, <br> NoSQL, Telegram bot development, <br> Flask, HTML, and working with CSV <br> files.  Additionally, I'm familiar with the   <br>Turtle and  Pillow libraries in Python. <br> My goal is to continue expanding my <br>knowledge and skills to become a top-notch <br>developer. Step by step, I'm mastering different <br>technologies and building real-world projects. <br>The journey is challenging, but I'm passionate <br> and determined to achieve my dreams.</p>
-    
-    
+    <p class='otabek'>I'm currently on an exciting journey <br> in the world of IT. I've already gained <br> solid experience in Python, C#, SQL, <br> NoSQL, Telegram bot development, <br> Flask, HTML, and working with CSV <br> files.  Additionally, I'm familiar with the   <br>Turtle and  Pillow libraries in Python. <br> My goal is to continue expanding my <br>knowledge and skills to become a top-notch <br>developer. Step by step, I'm mastering different <br>technologies and building real-world projects. <br>The journey is challenging, but I'm passionate <br> and determined to achieve my dreams.</p>
+    <h1 class ='box'> MY Projects:</h1>
+    <p class="otabek">I have worked on several projects to enhance my skills, primarily focusing on Telegram bots. One of my projects involved creating a bot for restaurant orders, allowing users to place orders with pictures. I also developed an online shopping bot for managing customer orders. My most recent project was a school management bot that enables adding and removing students and teachers, as well as facilitating communication with users. For these projects, I primarily use SQL and NoSQL databases to handle data efficiently.
+
+    </p>
+    <h1 class="box">My school location:</h1>
+    <h1 class="otabek" white">Samarkand → <br>Beruniy ko'chasi 87</h1>
+    <button onclick="openLocation()">Open location</button>
+     
+    <script>
+      function openLocation() {
+        window.open("https://www.google.com/maps/dir//Beruniy+ko%27chasi,+87,+Samarkand");
+      }
+    </script>
       
 
 </body>
