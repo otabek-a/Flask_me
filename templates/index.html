@@ -32,17 +32,22 @@
       border: 3px white; /* Ramka */
       box-sizing: border-box; /* Ramka eni bilan bir xil */
       border-radius: 15px;
-    } button {
-      padding: 15px 40px;
+    } 
+    button {
+      width: 100%; /* Tugma kengligi 100% */
+      max-width: 300px; /* Tugmaning maksimal eni 300px */
+      padding: 15px; /* Mayda balandlik */
       font-size: 20px;
-      background-color: white;
-      border: none;
+      background-color: black; /* Fon qora */
+      color: white; /* Yozuv oq */
+      border: 3px solid white; /* Ramka oq */
       border-radius: 15px;
       cursor: pointer;
     }
+
     button:hover {
-      background-color: black;
-      color: white;
+      background-color: white; /* Hoverda fon oq */
+      color: black; /* Yozuvi qora */
     }
  
    </style>
@@ -63,14 +68,29 @@
 
     </p>
     <h1 class="box">My school location:</h1>
-    <h1 class="otabek" white">Samarkand → <br>Beruniy ko'chasi 87</h1>
+    <h1 class="otabek" >Samarkand → <br>Beruniy ko'chasi 87</h1>
+
     <button onclick="openLocation()">Open location</button>
+    <div>
+      <img src=" static/Screenshot 2025-03-16 at 14.37.35.png"  alt="Bu men, Otabek!" />
      
+    </div>
     <script>
+         <div></div>
       function openLocation() {
         window.open("https://www.google.com/maps/dir//Beruniy+ko%27chasi,+87,+Samarkand");
       }
     </script>
+    <h1 class="box"> contact with me:</h1>
+    <img src=" static/Screenshot 2025-03-16 at 14.32.43.png"  alt="Bu men, Otabek!" />
+    <div>
+    <button onclick="open_user()">my telegram</button>
+    <script>
+        function open_user() {
+            window.open("https://t.me/otabek_122113");
+        }
+      </script>
+      </div>
       
 
 </body>
